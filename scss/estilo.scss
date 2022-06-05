@@ -1,0 +1,66 @@
+//Variables
+$color-borde: black;
+$duracion-animacion: 1s;
+
+@import "header", "main", "footer";
+
+/*MAPS*/
+
+$mapImagenes:(imagen1: red, imagen2:blue, imagen3: green, imagen4:yellow);
+
+@each $imagen,
+$color in $mapImagenes {
+  .#{$imagen} {
+    box-shadow: $color 2px 2px 2px 2px;
+  }
+}
+
+/*********QUERIES*********/
+
+/****VISTA MOVIL***/
+
+@media screen and (max-width: 767px) and (min-width: 300px) {
+  #imagenLogo {
+    width: 70%;
+    height: 75%;
+    margin: 1% 1% 1% 1%;
+    border-style: dashed;
+  }
+
+  h1 {
+    font-size: small;
+  }
+
+  #linkLogo {
+    margin-top: 1%;
+  }
+
+  #formularioBusqueda {
+    display: none;
+  }
+
+  header #itemDos a img {
+    margin-top: 5%;
+    width: 70%;
+    height: 70%;
+  }
+
+  #productosVenta {
+    margin-left: 4px;
+
+    img {
+      margin: 2px;
+      width: 2cm;
+      height: 2cm;
+      border: 3px $color-borde groove;
+    }
+  }
+
+  #navFooter {
+    display: block;
+  }
+
+  #imagenConstruccion {
+    margin-left: 1px;
+  }
+}
