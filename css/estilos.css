@@ -132,4 +132,12 @@ footer {
   #navFooter {
     display: block; }
   #imagenConstruccion {
-    margin-left: 1px; } }
+    margin-left: 1px; }
+  #botonCompra {
+    margin-bottom: 30px; }
+  #productoIndividual {
+    width: 9cm;
+    height: 8cm;
+    margin-bottom: 1px !important; }
+  #descripcionProductoIndividual {
+    margin-left: 50px; } }
