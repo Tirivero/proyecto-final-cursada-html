@@ -140,4 +140,6 @@ footer {
     height: 8cm;
     margin-bottom: 1px !important; }
   #descripcionProductoIndividual {
-    margin-left: 50px; } }
+    margin-left: 50px; }
+  #indicadorUnidadesProducto {
+    font-size: 13px; } }
