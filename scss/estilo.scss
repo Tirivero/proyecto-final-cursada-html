@@ -2,6 +2,7 @@
 $color-borde: black;
 $duracion-animacion: 1s;
 $color-sombra: lightblue;
+$margenlogo: 3%;
 
 @import "header", "main", "footer";
 
@@ -24,26 +25,41 @@ $color in $mapImagenes {
   #imagenLogo {
     width: 70%;
     height: 75%;
-    margin: 1% 1% 1% 1%;
+    margin: 3% 1% 1% 1%;
     border-style: dashed;
   }
 
+  #itemUno {
+    justify-content: flex-start;
+  }
+
   h1 {
-    font-size: small;
+    font-size: large;
   }
 
   #linkLogo {
-    margin-top: 1%;
+    margin-top: $margenlogo;
   }
 
   #formularioBusqueda {
     display: none;
   }
 
-  header #itemDos a img {
-    margin-top: 5%;
-    width: 70%;
-    height: 70%;
+  #itemDos {
+    padding: 0;
+    margin-top: $margenlogo;
+
+
+    a img {
+      display: flex;
+      justify-content: flex-end;
+      width: 70%;
+      height: 70%;
+    }
+  }
+
+  #imagenIndex {
+    height: auto;
   }
 
   #productosVenta {
@@ -53,7 +69,7 @@ $color in $mapImagenes {
       margin: 2px;
       width: 3cm;
       height: 3cm;
-     }
+    }
   }
 
   #navFooter {
@@ -64,20 +80,42 @@ $color in $mapImagenes {
     margin-left: 1px;
   }
 
-  #botonCompra{
+  #botonCompra {
     margin-bottom: 30px;
   }
-  #productoIndividual{
+
+  #productoIndividual {
     width: 9cm;
-    height: 8cm ;
+    height: 8cm;
     margin-bottom: 1px !important;
   }
-  #descripcionProductoIndividual{
+
+  #descripcionProductoIndividual {
     margin-left: 50px;
   }
 
-  #indicadorUnidadesProducto{
-    font-size:13px;
+  #indicadorUnidadesProducto {
+    font-size: 13px;
+  }
+
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+
+  #itemDos {
+    width: 5%;
+    display: flex;
+    flex: auto;
+    justify-content: flex-end;
+    padding-left: 0;
+  }
+
+  #linkLogo {
+    margin-top: $margenlogo;
+  }
+
+  #imagenLogo {
+    margin-top: $margenlogo
   }
 
 }

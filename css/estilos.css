@@ -46,13 +46,15 @@ h1 {
 #logoCarrito {
   width: 80px;
   height: 80px;
-  border-radius: 200px; }
+  border-radius: 200px;
+  border-style: solid; }
 
 #logoCuenta {
   width: 80px;
   height: 80px;
   border-radius: 200px;
-  margin-right: 5px; }
+  margin-right: 5px;
+  border-style: solid; }
 
 /*******MAIN******/
 #productosVenta {
@@ -88,9 +90,8 @@ h2 {
     color: black;
     text-align: center;
     font-family: Bold; }
-
-#pruebaCard:hover {
-  box-shadow: lightblue 1px 3px 3px 1px; }
+  #pruebaCard:hover {
+    box-shadow: lightblue 1px 3px 3px 1px; }
 
 /*****FOOTER*****/
 /*EXTEND*/
@@ -128,18 +129,26 @@ footer {
   #imagenLogo {
     width: 70%;
     height: 75%;
-    margin: 1% 1% 1% 1%;
+    margin: 3% 1% 1% 1%;
     border-style: dashed; }
+  #itemUno {
+    justify-content: flex-start; }
   h1 {
-    font-size: small; }
+    font-size: large; }
   #linkLogo {
-    margin-top: 1%; }
+    margin-top: 3%; }
   #formularioBusqueda {
     display: none; }
-  header #itemDos a img, footer #itemDos a img {
-    margin-top: 5%;
-    width: 70%;
-    height: 70%; }
+  #itemDos {
+    padding: 0;
+    margin-top: 3%; }
+    #itemDos a img {
+      display: flex;
+      justify-content: flex-end;
+      width: 70%;
+      height: 70%; }
+  #imagenIndex {
+    height: auto; }
   #productosVenta {
     margin-left: 4px; }
     #productosVenta img {
@@ -160,3 +169,15 @@ footer {
     margin-left: 50px; }
   #indicadorUnidadesProducto {
     font-size: 13px; } }
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  #itemDos {
+    width: 5%;
+    display: flex;
+    flex: auto;
+    justify-content: flex-end;
+    padding-left: 0; }
+  #linkLogo {
+    margin-top: 3%; }
+  #imagenLogo {
+    margin-top: 3%; } }

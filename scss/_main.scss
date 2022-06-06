@@ -3,14 +3,14 @@
 #productosVenta {
   display: flex;
   flex-wrap: wrap;
-  justify-content:center;
-  
+  justify-content: center;
+
 
   img {
     margin: 3px;
     width: 5cm;
     height: 5cm;
-    
+
   }
 }
 
@@ -27,27 +27,25 @@ h2 {
   margin-bottom: 30px;
 }
 
-#pruebaCard{
+#pruebaCard {
   border: 3px $color-borde groove;
-  width:fit-content;
+  width: fit-content;
   margin-bottom: 15px;
-  margin-left: 2px ;
-  margin-right: 2px ;
+  margin-left: 2px;
+  margin-right: 2px;
 
-  a{
+  a {
     text-decoration: none;
   }
 
-   p {
-    font-size:13px;
+  p {
+    font-size: 13px;
     color: $color-borde;
     text-align: center;
-    font-family:Bold;
-    
+    font-family: Bold;
   }
-}
 
-#pruebaCard:hover{
-  box-shadow: $color-sombra 1px 3px 3px 1px ;
-  
+  &:hover {
+    box-shadow: $color-sombra 1px 3px 3px 1px;
+  }
 }

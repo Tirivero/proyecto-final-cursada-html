@@ -63,14 +63,15 @@ h1 {
   width: 80px;
   height: 80px;
   border-radius: 200px;
-
 }
 
 #logoCarrito {
   @include logosHeader;
+  border-style: solid;
 }
 
 #logoCuenta {
   @include logosHeader;
   margin-right: 5px;
+  border-style: solid;
 }
