@@ -1,13 +1,16 @@
 /*******MAIN******/
 
 #productosVenta {
-  margin-left: 17px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  
 
   img {
     margin: 3px;
-    width: 6cm;
-    height: 6cm;
-    border: 3px $color-borde groove;
+    width: 5cm;
+    height: 5cm;
+    
   }
 }
 
@@ -22,4 +25,29 @@
 h2 {
   margin-top: 40px;
   margin-bottom: 30px;
+}
+
+#pruebaCard{
+  border: 3px $color-borde groove;
+  width:fit-content;
+  margin-bottom: 15px;
+  margin-left: 2px ;
+  margin-right: 2px ;
+
+  a{
+    text-decoration: none;
+  }
+
+   p {
+    font-size:13px;
+    color: $color-borde;
+    text-align: center;
+    font-family:Bold;
+    
+  }
+}
+
+#pruebaCard:hover{
+  box-shadow: $color-sombra 1px 3px 3px 1px ;
+  
 }

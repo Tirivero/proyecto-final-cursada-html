@@ -56,12 +56,13 @@ h1 {
 
 /*******MAIN******/
 #productosVenta {
-  margin-left: 17px; }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
   #productosVenta img {
     margin: 3px;
-    width: 6cm;
-    height: 6cm;
-    border: 3px black groove; }
+    width: 5cm;
+    height: 5cm; }
 
 #imagenIndex {
   width: 100%;
@@ -73,6 +74,23 @@ h1 {
 h2 {
   margin-top: 40px;
   margin-bottom: 30px; }
+
+#pruebaCard {
+  border: 3px black groove;
+  width: fit-content;
+  margin-bottom: 15px;
+  margin-left: 2px;
+  margin-right: 2px; }
+  #pruebaCard a {
+    text-decoration: none; }
+  #pruebaCard p {
+    font-size: 13px;
+    color: black;
+    text-align: center;
+    font-family: Bold; }
+
+#pruebaCard:hover {
+  box-shadow: lightblue 1px 3px 3px 1px; }
 
 /*****FOOTER*****/
 /*EXTEND*/
@@ -127,8 +145,7 @@ footer {
     #productosVenta img {
       margin: 2px;
       width: 2cm;
-      height: 2cm;
-      border: 3px black groove; }
+      height: 2cm; }
   #navFooter {
     display: block; }
   #imagenConstruccion {

@@ -1,6 +1,7 @@
 //Variables
 $color-borde: black;
 $duracion-animacion: 1s;
+$color-sombra: lightblue;
 
 @import "header", "main", "footer";
 
@@ -52,8 +53,7 @@ $color in $mapImagenes {
       margin: 2px;
       width: 2cm;
       height: 2cm;
-      border: 3px $color-borde groove;
-    }
+     }
   }
 
   #navFooter {
