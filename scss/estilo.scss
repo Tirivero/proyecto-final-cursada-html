@@ -65,8 +65,13 @@ $color in $mapImagenes {
   #productosVenta {
     margin-left: 4px;
 
+    #pruebaCard {
+      width: 150px;
+      height: 210px;
+    }
+
     img {
-      margin: 2px;
+      margin: 2px 2px 10px 2px;
       width: 3cm;
       height: 3cm;
     }
@@ -97,6 +102,17 @@ $color in $mapImagenes {
   #indicadorUnidadesProducto {
     font-size: 13px;
   }
+
+  #contenedorFormContacto {
+    display: inline;
+
+    #mapaContacto {
+      margin-left: 57px;
+      width: 250px !important;
+    }
+  }
+
+
 
 }
 
