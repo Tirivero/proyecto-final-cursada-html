@@ -1,18 +1,27 @@
 /*****HEADER*****/
-header, footer {
+header,
+footer {
   background-image: linear-gradient(to top, lightblue, pink);
-  border: 1px black solid; }
+  border: 1px black solid;
+}
 
 @keyframes texto {
   0% {
-    opacity: 0; }
+    opacity: 0;
+  }
+
   100% {
-    opacity: 100%; } }
-  header h1, footer h1 {
-    text-decoration: underline;
-    animation-name: texto;
-    animation-duration: 2s;
-    animation-iteration-count: infinite; }
+    opacity: 100%;
+  }
+}
+
+header h1,
+footer h1 {
+  text-decoration: underline;
+  animation-name: texto;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
 
 /**Titulo y formulario del header**/
 #itemUno {
@@ -20,65 +29,80 @@ header, footer {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  size: 100%; }
+  size: 100%;
+}
 
 /**Logo header**/
 #imagenLogo {
   z-index: 1;
   width: 50%;
   height: 90%;
-  border-style: dashed; }
+  border-style: dashed;
+}
 
 @keyframes animacionLogo {
   from {
-    transform: rotate(0deg); }
+    transform: rotate(0deg);
+  }
+
   to {
-    transform: rotate(360deg); } }
+    transform: rotate(360deg);
+  }
+}
 
 #linkLogo {
   z-index: 1;
   animation-name: animacionLogo;
   animation-iteration-count: initial;
-  animation-duration: 2s; }
+  animation-duration: 2s;
+}
 
 /*MIXIN SIN PARAMETROS*/
 #logoCarrito {
   width: 80px;
   height: 80px;
   border-radius: 200px;
-  border-style: solid; }
+  border-style: solid;
+}
 
 #logoCuenta {
   width: 80px;
   height: 80px;
   border-radius: 200px;
   margin-right: 5px;
-  border-style: solid; }
+  border-style: solid;
+}
 
 /*******MAIN******/
 #productosVenta {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
-  #productosVenta img {
-    margin: 3px 3px 15px 3px;
-    width: 5cm;
-    height: 5cm;
-    padding-top: 20px; }
+  justify-content: center;
+}
+
+#productosVenta img {
+  margin: 3px 3px 15px 3px;
+  width: 5cm;
+  height: 5cm;
+  padding-top: 20px;
+}
 
 #imagenIndex {
   width: 100%;
   margin: 0;
   padding: 0;
   height: 20rem;
-  box-shadow: 1px 2px 2px 1px gray; }
+  box-shadow: 1px 2px 2px 1px gray;
+}
 
 h2 {
   margin-top: 40px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+}
 
 h3 {
-  text-align: center; }
+  text-align: center;
+}
 
 #pruebaCard {
   border: 3px black groove;
@@ -86,52 +110,68 @@ h3 {
   height: 280px;
   margin-bottom: 15px;
   margin-left: 2px;
-  margin-right: 2px; }
-  #pruebaCard a {
-    text-decoration: none; }
-  #pruebaCard p {
-    font-size: 13px;
-    color: black;
-    text-align: center;
-    font-family: Bold;
-    margin-bottom: 0; }
-  #pruebaCard:hover {
-    box-shadow: lightblue 1px 2px 2px 3px; }
+  margin-right: 2px;
+}
 
-#formularioCuenta, #formularioContacto {
+#pruebaCard a {
+  text-decoration: none;
+}
+
+#pruebaCard p {
+  font-size: 13px;
+  color: black;
+  text-align: center;
+  font-family: Bold;
+  margin-bottom: 0;
+}
+
+#pruebaCard:hover {
+  box-shadow: lightblue 1px 2px 2px 3px;
+}
+
+#formularioCuenta,
+#formularioContacto {
   width: 250px;
   height: 580px;
   padding-left: 18px;
   margin-bottom: 100px;
-  margin-top: 18px; }
+  margin-top: 18px;
+}
 
 #formularioContacto {
   border: 1px black solid;
-  padding-right: 10px; }
+  padding-right: 10px;
+}
 
 /*****FOOTER*****/
 /*EXTEND*/
 footer {
-  margin-top: 5px; }
+  margin-top: 5px;
+}
 
 /*MAPS GET*/
 .list-group-item a img {
   width: 35px;
   height: 35px;
-  border-radius: 200px; }
+  border-radius: 200px;
+}
 
 /**MAPS**/
 .imagen1 {
-  box-shadow: red 2px 2px 2px 2px; }
+  box-shadow: red 2px 2px 2px 2px;
+}
 
 .imagen2 {
-  box-shadow: blue 2px 2px 2px 2px; }
+  box-shadow: blue 2px 2px 2px 2px;
+}
 
 .imagen3 {
-  box-shadow: green 2px 2px 2px 2px; }
+  box-shadow: green 2px 2px 2px 2px;
+}
 
 .imagen4 {
-  box-shadow: yellow 2px 2px 2px 2px; }
+  box-shadow: yellow 2px 2px 2px 2px;
+}
 
 /*********QUERIES*********/
 /****VISTA MOVIL***/
@@ -140,55 +180,96 @@ footer {
     width: 70%;
     height: 75%;
     margin: 3% 1% 1% 1%;
-    border-style: dashed; }
+    border-style: dashed;
+  }
+
   #itemUno {
-    justify-content: flex-start; }
+    justify-content: flex-start;
+  }
+
   h1 {
-    font-size: large; }
+    font-size: large;
+  }
+
   #linkLogo {
-    margin-top: 3%; }
+    margin-top: 3%;
+  }
+
   #formularioBusqueda {
-    display: none; }
+    display: none;
+  }
+
   #itemDos {
     padding: 0;
-    margin-top: 3%; }
-    #itemDos a img {
-      display: flex;
-      justify-content: flex-end;
-      width: 70%;
-      height: 70%; }
+    margin-top: 3%;
+  }
+
+  #itemDos a img {
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+    height: 70%;
+  }
+
   #imagenIndex {
-    height: auto; }
+    height: auto;
+  }
+
   #productosVenta {
-    margin-left: 4px; }
-    #productosVenta #pruebaCard {
-      width: 150px;
-      height: 210px; }
-    #productosVenta img {
-      margin: 2px 2px 10px 2px;
-      width: 3cm;
-      height: 3cm; }
+    margin-left: 4px;
+  }
+
+  #productosVenta #pruebaCard {
+    width: 150px;
+    height: 210px;
+  }
+
+  #productosVenta img {
+    margin: 2px 2px 10px 2px;
+    width: 3cm;
+    height: 3cm;
+  }
+
   #navFooter {
-    display: block; }
+    display: block;
+  }
+
   #imagenConstruccion {
-    margin-left: 1px; }
+    margin-left: 1px;
+  }
+
   #botonCompra {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+  }
+
   #productoIndividual {
     width: 9cm;
     height: 8cm;
-    margin-bottom: 1px !important; }
+    margin-bottom: 1px !important;
+  }
+
   #descripcionProductoIndividual {
-    margin-left: 50px; }
+    margin-left: 50px;
+  }
+
   #indicadorUnidadesProducto {
-    font-size: 13px; }
+    font-size: 13px;
+  }
+
   #contenedorFormContacto {
-    display: inline; }
-    #contenedorFormContacto #mapaContacto {
-      margin-left: 57px;
-      width: 250px !important; }
-  #formularioCuenta, #formularioContacto {
-    height: 37rem; } }
+    display: inline;
+  }
+
+  #contenedorFormContacto #mapaContacto {
+    margin-left: 57px;
+    width: 250px !important;
+  }
+
+  #formularioCuenta,
+  #formularioContacto {
+    height: 37rem;
+  }
+}
 
 /****VISTA TABLET***/
 @media screen and (max-width: 1023px) and (min-width: 768px) {
@@ -197,8 +278,14 @@ footer {
     display: flex;
     flex: auto;
     justify-content: flex-end;
-    padding-left: 0; }
+    padding-left: 0;
+  }
+
   #linkLogo {
-    margin-top: 3%; }
+    margin-top: 3%;
+  }
+
   #imagenLogo {
-    margin-top: 3%; } }
+    margin-top: 3%;
+  }
+}
