@@ -14,11 +14,3 @@ $variables:(color: black, width: 35px, height:35px);
   height: map-get($variables, height);
   border-radius: 200px;
 }
-
-/*Imagen de pagina Cuenta en construccion */
-
-#imagenConstruccion {
-  border: 2px $color-borde dashed;
-  box-shadow: 2px 2px 2px 2px gray;
-  margin: 4% 10% 4% 28%;
-}

@@ -8,12 +8,11 @@ header, footer {
     opacity: 0; }
   100% {
     opacity: 100%; } }
-
-h1 {
-  text-decoration: underline;
-  animation-name: texto;
-  animation-duration: 2s;
-  animation-iteration-count: infinite; }
+  header h1, footer h1 {
+    text-decoration: underline;
+    animation-name: texto;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; }
 
 /**Titulo y formulario del header**/
 #itemUno {
@@ -97,11 +96,11 @@ h3 {
     font-family: Bold;
     margin-bottom: 0; }
   #pruebaCard:hover {
-    box-shadow: lightblue 1px 3px 3px 1px; }
+    box-shadow: lightblue 1px 2px 2px 3px; }
 
 #formularioCuenta, #formularioContacto {
   width: 250px;
-  height: 550px;
+  height: 580px;
   padding-left: 18px;
   margin-bottom: 100px;
   margin-top: 18px; }
@@ -121,13 +120,7 @@ footer {
   height: 35px;
   border-radius: 200px; }
 
-/*Imagen de pagina Cuenta en construccion */
-#imagenConstruccion {
-  border: 2px black dashed;
-  box-shadow: 2px 2px 2px 2px gray;
-  margin: 4% 10% 4% 28%; }
-
-/*MAPS*/
+/**MAPS**/
 .imagen1 {
   box-shadow: red 2px 2px 2px 2px; }
 
@@ -193,7 +186,9 @@ footer {
     display: inline; }
     #contenedorFormContacto #mapaContacto {
       margin-left: 57px;
-      width: 250px !important; } }
+      width: 250px !important; }
+  #formularioCuenta, #formularioContacto {
+    height: 37rem; } }
 
 /****VISTA TABLET***/
 @media screen and (max-width: 1023px) and (min-width: 768px) {

@@ -5,13 +5,11 @@
   flex-wrap: wrap;
   justify-content: center;
 
-
   img {
     margin: 3px 3px 15px 3px;
     width: 5cm;
     height: 5cm;
     padding-top: 20px;
-
   }
 }
 
@@ -28,15 +26,14 @@ h2 {
   margin-bottom: 30px;
 }
 
-h3{
+h3 {
   text-align: center;
 }
 
-
 #pruebaCard {
   border: 3px $color-borde groove;
-  width:230px;
-  height:280px;
+  width: 230px;
+  height: 280px;
   margin-bottom: 15px;
   margin-left: 2px;
   margin-right: 2px;
@@ -54,23 +51,21 @@ h3{
   }
 
   &:hover {
-    box-shadow: $color-sombra 1px 3px 3px 1px;
+    box-shadow: $color-sombra 1px 2px 2px 3px;
+    
   }
-
-  
 }
 
-#formularioCuenta{
- width:250px;
- height: 550px;
- padding-left: 18px;
- margin-bottom: 100px;
- margin-top: 18px;
+#formularioCuenta {
+  width: 250px;
+  height: 580px;
+  padding-left: 18px;
+  margin-bottom: 100px;
+  margin-top: 18px;
 }
-  
-#formularioContacto{
- @extend #formularioCuenta;
- border: 1px $color-borde solid;
- padding-right: 10px;
 
+#formularioContacto {
+  @extend #formularioCuenta;
+  border: 1px $color-borde solid;
+  padding-right: 10px;
 }

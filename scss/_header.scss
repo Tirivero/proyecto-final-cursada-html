@@ -2,23 +2,24 @@
 header {
   background-image: linear-gradient(to top, lightblue, pink);
   border: 1px $color-borde solid;
-}
 
-@keyframes texto {
-  0% {
-    opacity: 0;
+
+  @keyframes texto {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 100%;
+    }
   }
 
-  100% {
-    opacity: 100%;
+  h1 {
+    text-decoration: underline;
+    animation-name: texto;
+    animation-duration: 3s - $duracion-animacion;
+    animation-iteration-count: infinite;
   }
-}
-
-h1 {
-  text-decoration: underline;
-  animation-name: texto;
-  animation-duration: 3s - $duracion-animacion;
-  animation-iteration-count: infinite;
 }
 
 /**Titulo y formulario del header**/

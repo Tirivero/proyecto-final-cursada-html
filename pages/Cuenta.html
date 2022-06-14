@@ -4,13 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content=" accesorios celulares ipads ">
-    <meta name="description"
-        content="Kurama ofrece accesorios de todo tipo para celulares, tablets y ipads. Lo que necesitas encontralo acá">
+    <meta name="keywords" content="accesorios celulares ipads">
+    <meta name="description" content="Kurama ofrece accesorios de todo tipo para celulares, tablets y ipads. Lo que necesitas encontralo acá">
     <title>Cuenta</title>
     <link rel="shortcut icon" href="../img/favicon.bmp" type="image/x-icon">
-    <!--LINK ANIMACION-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!--BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -94,12 +91,15 @@
     <main>
         <h2 class="text-center text-decoration-underline fs-1">Cuenta</h2>
         <div class="row">
+            <!---Formulario registrarse primera vez-->
             <form class="col d-flex justify-content-center">
                 <div class="border border-dark" id="formularioCuenta">
                     <h3 class="text mt-3">Registro</h3>
+                    <p class="text-center">(usuarios nuevos)</p>
                     <div class="mb-3 overflow-auto">
                         <label for="exampleInputEmail1" class="form-label">Nombre:</label>
-                        <input type="email" class="form-control" style="width:200px" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="email" class="form-control" style="width:200px" id="exampleInputEmail1"
+                            aria-describedby="emailHelp">
                         <div id="emailHelp" class="form-text">No compartiremos tu informacion.</div>
                     </div>
                     <div class="mb-3 overflow-auto">
@@ -119,14 +119,17 @@
                         <label for="exampleInputPassword1" class="form-label">Contraseña:</label>
                         <input type="password" class="form-control" style="width:200px;" id="exampleInputPassword1">
                     </div>
-                    <button type="reset" class="btn btn-primary mt-2 overflow-auto" style="margin-left:40px;" value="Reset">Reset</button>
+                    <button type="reset" class="btn btn-primary mt-2 overflow-auto" style="margin-left:40px;"
+                        value="Reset">Reset</button>
                     <button type="submit" class="btn btn-primary mt-2 overflow-auto">Enviar</button>
                 </div>
             </form>
-
+            
+            <!--Formulario para ingresar si ya estas registrado-->
             <form class="col d-flex justify-content-center">
                 <div class="border border-dark" id="formularioCuenta">
                     <h3 class="text mt-3">Login</h3>
+                    <p class="text-center">(si ya tenes cuenta)</p>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Email:</label>
                         <input type="email" class="form-control" style="width:200px;" id="exampleInputEmail1"
@@ -146,7 +149,8 @@
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
                         <label class="form-check-label" for="exampleCheck1">No cerrar sesión</label>
                     </div>
-                    <button type="submit" class="btn btn-primary" style="margin-left:65px; margin-top: 15px;">Login</button>
+                    <button type="submit" class="btn btn-primary"
+                        style="margin-left:65px; margin-top: 15px;">Login</button>
                 </div>
             </form>
         </div>

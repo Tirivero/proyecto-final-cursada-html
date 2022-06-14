@@ -6,7 +6,7 @@ $margenlogo: 3%;
 
 @import "header", "main", "footer";
 
-/*MAPS*/
+/**MAPS**/
 
 $mapImagenes:(imagen1: red, imagen2:blue, imagen3: green, imagen4:yellow);
 
@@ -112,10 +112,10 @@ $color in $mapImagenes {
     }
   }
 
-
-
+  #formularioCuenta{
+    height: 37rem;
+  }
 }
-
 
 /****VISTA TABLET***/
 @media screen and (max-width: 1023px) and (min-width: 768px) {
